@@ -456,6 +456,7 @@
 				BD70A83718DCEA9600CEF52E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD70A83818DCEA9600CEF52E /* Build configuration list for PBXNativeTarget "SwipeEdgeGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				BD70A83A18DCEA9600CEF52E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
