@@ -26,12 +26,11 @@
 {
     [super viewDidLoad];
     
-	// Do any additional setup after loading the view, typically from a nib.
     UIScreenEdgePanGestureRecognizer *leftEdgeGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleLeftEdgeGesture:)];
     leftEdgeGesture.edges = UIRectEdgeLeft;
     leftEdgeGesture.delegate = self;
     [self.view addGestureRecognizer:leftEdgeGesture];
-    
+
     UIScreenEdgePanGestureRecognizer *rightEdgeGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleRightEdgeGesture:)];
     rightEdgeGesture.edges = UIRectEdgeRight;
     rightEdgeGesture.delegate = self;
@@ -71,8 +70,6 @@
         self.leftDistanceLabel.text = [NSString stringWithFormat:@"%0.1f", translation.x];
         
         view.center = CGPointMake(_centerX + translation.x, view.center.y);
-        
-        
     } else {  // cancel, fail, or ended
         // reset
         self.leftDistanceLabel.text = @"0.0";
